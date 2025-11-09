@@ -11,8 +11,8 @@ export default function Header() {
           <Image
             src={logo.imageUrl}
             alt="Logo Especialista em Drywall"
-            width={140}
-            height={140}
+            width={200}
+            height={200}
             className="rounded-full"
             data-ai-hint={logo.imageHint}
             priority
