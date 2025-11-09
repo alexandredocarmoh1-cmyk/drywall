@@ -5,7 +5,7 @@ export default function Header() {
   const logo = PlaceHolderImages.find((img) => img.id === "drywall-logo");
 
   return (
-    <header className="py-12 text-center">
+    <header className="py-6 text-center">
       <div className="inline-block mb-4">
         {logo && (
           <Image

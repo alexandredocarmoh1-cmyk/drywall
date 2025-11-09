@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <Separator className="mt-8 mb-4" />
+        <Separator className="mb-4" />
 
         <h2 className="font-headline text-2xl font-bold text-primary mb-8 border-l-4 border-primary pl-4">
           📘 Módulos Principais
