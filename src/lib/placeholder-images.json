@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "logo",
-      "description": "Drywall Pro Logo",
-      "imageUrl": "https://images.unsplash.com/photo-1670824262862-fc58d952bb11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo professional"
-    },
-    {
       "id": "drywall-walls",
       "description": "A room with freshly installed drywall walls.",
       "imageUrl": "https://images.unsplash.com/photo-1718816281207-3b253cff549a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcnl3YWxsJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
