@@ -5,8 +5,8 @@ export default function Header() {
   const logo = PlaceHolderImages.find((img) => img.id === "drywall-logo");
 
   return (
-    <header className="py-6 text-center">
-      <div className="inline-block mb-4">
+    <header className="py-2 text-center">
+      <div className="inline-block">
         {logo && (
           <Image
             src={logo.imageUrl}
@@ -19,12 +19,6 @@ export default function Header() {
           />
         )}
       </div>
-      <h1 className="font-headline text-4xl font-bold text-primary mb-2">
-        Área de Membros 👷‍♂️
-      </h1>
-      <p className="text-muted-foreground">
-        Curso Profissionalizante — Especialista em Drywall
-      </p>
     </header>
   );
 }
