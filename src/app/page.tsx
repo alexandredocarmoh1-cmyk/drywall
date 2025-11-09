@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { mainModules, bonusModules } from "@/app/data";
 import ModuleCard from "@/components/module-card";
 import { Separator } from "@/components/ui/separator";
-import LearningPath from "@/components/learning-path";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { MessageSquareText } from "lucide-react";
@@ -13,8 +12,6 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <LearningPath />
-
         <Separator className="my-12" />
 
         <h2 className="font-headline text-2xl font-bold text-primary mb-8 border-l-4 border-primary pl-4">
