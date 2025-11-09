@@ -1,17 +1,22 @@
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function Header() {
+  const logo = PlaceHolderImages.find((img) => img.id === "drywall-logo");
+
   return (
     <header className="py-12 text-center">
-      <div className="inline-block p-4 bg-primary/10 rounded-full mb-4 border-2 border-primary/20">
-        {/* Substitua a URL abaixo pela URL da sua logo */}
-        <Image
-          src="https://picsum.photos/seed/logo/100/100"
-          alt="Logo Drywall Pro"
-          width={96}
-          height={96}
-          className="rounded-full"
-        />
+      <div className="inline-block mb-4">
+        {logo && (
+          <Image
+            src={logo.imageUrl}
+            alt="Logo Especialista em Drywall"
+            width={140}
+            height={140}
+            className="rounded-full"
+            data-ai-hint={logo.imageHint}
+          />
+        )}
       </div>
       <h1 className="font-headline text-4xl font-bold text-primary mb-2">
         Área de Membros 👷‍♂️
