@@ -15,6 +15,7 @@ export default function Header() {
             height={140}
             className="rounded-full"
             data-ai-hint={logo.imageHint}
+            priority
           />
         )}
       </div>
