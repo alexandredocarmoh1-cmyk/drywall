@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "logo",
+      "description": "Drywall Pro Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1670824262862-fc58d952bb11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo professional"
+    },
+    {
+      "id": "drywall-walls",
+      "description": "A room with freshly installed drywall walls.",
+      "imageUrl": "https://images.unsplash.com/photo-1718816281207-3b253cff549a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcnl3YWxsJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "drywall construction"
+    },
+    {
+      "id": "drywall-ceilings",
+      "description": "A complex drywall ceiling with recessed lighting.",
+      "imageUrl": "https://images.unsplash.com/photo-1760281854666-fb763b7d0f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZWlsaW5nJTIwaW5zdGFsbGF0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceiling installation"
+    },
+    {
+      "id": "drywall-finishing",
+      "description": "A worker applying finishing touches and paint to a wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1652572036885-b5e9205dd847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFpbnRpbmclMjB3YWxsfGVufDB8fHx8MTc2MjYyMDE1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "painting wall"
+    },
+    {
+      "id": "drywall-budget",
+      "description": "A person working on a budget with blueprints and a calculator.",
+      "imageUrl": "https://images.unsplash.com/photo-1592818993411-eba55f84e788?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb25zdHJ1Y3Rpb24lMjBidWRnZXR8ZW58MHx8fHwxNzYyNjk4ODI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction budget"
+    },
+    {
+      "id": "drywall-tools",
+      "description": "A collection of essential tools for drywall installation.",
+      "imageUrl": "https://images.unsplash.com/photo-1502343019212-cc6a09783255?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25zdHJ1Y3Rpb24lMjB0b29sc3xlbnwwfHx8fDE3NjI2NDU4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction tools"
+    },
+    {
+      "id": "drywall-suppliers",
+      "description": "A warehouse of building and construction materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1595414440701-da000c40df9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMG1hdGVyaWFsc3xlbnwwfHx8fDE3NjI2MjEzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "building materials"
+    },
+    {
+      "id": "drywall-community",
+      "description": "A group of construction professionals in a discussion.",
+      "imageUrl": "https://images.unsplash.com/photo-1760992003923-ed5d455c1164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBkaXNjdXNzaW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community discussion"
+    }
+  ]
 }
