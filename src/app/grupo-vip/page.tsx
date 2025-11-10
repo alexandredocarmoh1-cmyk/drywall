@@ -11,7 +11,8 @@ import {
   Send,
   Info,
   ArrowLeft,
-  ArrowRight
+  ArrowRight,
+  MessageSquare
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Link from 'next/link';
@@ -135,10 +136,18 @@ export default function GrupoVipPage() {
                     <Copy className="h-4 w-4 text-muted-foreground" />
                   </Button>
                 </div>
-                <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold text-xs sm:text-sm">
+                <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold !p-3 !h-auto">
                   <a href={whatsappLink} target="_blank">
-                    CLIQUE AQUI PARA ENVIAR O COMPROVANTE
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <div className="flex flex-col md:flex-row md:items-center md:gap-2 text-center text-xs sm:text-sm">
+                      <div className="md:hidden">CLIQUE AQUI PARA</div>
+                      <div className="flex items-center justify-center gap-2">
+                          <MessageSquare className="h-4 w-4 md:hidden" />
+                          <span className="md:hidden">ENVIAR O</span>
+                           <span className="hidden md:inline">CLIQUE AQUI PARA ENVIAR O COMPROVANTE</span>
+                          <ArrowRight className="h-4 w-4" />
+                      </div>
+                      <div className="md:hidden">COMPROVANTE</div>
+                    </div>
                   </a>
                 </Button>
               </div>
