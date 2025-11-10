@@ -162,7 +162,7 @@ export const bonusModules: Module[] = [
     lessons: [],
     duration: '',
     buttonText: 'Entrar no Grupo',
-    buttonLink: '#',
+    buttonLink: '/grupo-vip',
     meta: getMeta(0, '', 'community'),
   },
 ];

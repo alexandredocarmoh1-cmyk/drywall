@@ -62,6 +62,11 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        'verde-cta': 'hsl(var(--verde-cta))',
+        'azul-info': {
+          DEFAULT: 'hsl(var(--azul-info))',
+          foreground: 'hsl(var(--azul-info-foreground))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

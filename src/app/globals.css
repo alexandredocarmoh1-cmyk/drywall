@@ -39,6 +39,9 @@ body {
     --amarelo: 47 100% 48%;
     --branco: 0 0% 100%;
     --cinza: 215 17% 85%;
+    --verde-cta: 145 63% 42%;
+    --azul-info: 212 100% 97%;
+    --azul-info-foreground: 212 84% 35%;
   }
 
   .dark {
