@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import {
   AlertTriangle,
@@ -11,12 +11,11 @@ import {
   Send,
   Info,
   Heart,
-  ArrowLeft
+  ArrowLeft,
+  ArrowRight
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Link from 'next/link';
-import Header from '@/components/layout/header';
-import Footer from '@/components/layout/footer';
 
 const PixInfoRow = ({
   label,
@@ -77,7 +76,6 @@ export default function GrupoVipPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
-       <Header />
       <main className="flex-grow container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full max-w-lg space-y-6">
         <Link href="/" passHref>
@@ -161,11 +159,6 @@ export default function GrupoVipPage() {
           </Card>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
-
-const ArrowRight = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-  );
