@@ -86,7 +86,7 @@ export const mainModules: Module[] = [
     description: 'Veja passo a passo como montar paredes firmes e bem acabadas.',
     imageId: 'drywall-finishing',
     lessons: [
-      { id: '1', title: 'Aula 1: Montando a parede de Drywall', duration: '18min', videoId: 'dQw4w9WgXcQ' },
+      { id: '1', title: 'Aula 1: Montagem Completa de Parede em Drywall (Passo a Passo Prático)', duration: '18min', videoId: 'dQw4w9WgXcQ' },
     ],
     duration: '18 min',
     buttonText: 'Acessar Aulas',
@@ -99,7 +99,7 @@ export const mainModules: Module[] = [
     description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
     imageId: 'drywall-budget',
     lessons: [
-      { id: '1', title: 'Aula 1: Instalando o forro de Drywall', duration: '25min', videoId: 'dQw4w9WgXcQ' },
+      { id: '1,', title: 'Aula 1: Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
     ],
     duration: '25 min',
     buttonText: 'Acessar Aulas',
@@ -112,7 +112,7 @@ export const mainModules: Module[] = [
     description: 'Monte sancas modernas e decorativas pra deixar o ambiente mais bonito.',
     imageId: 'drywall-structures',
     lessons: [
-        { id: '1', title: 'Aula 1: Construindo a sanca de Drywall', duration: '40min', videoId: 'dQw4w9WgXcQ' },
+        { id: '1', title: 'Aula 1: Aprenda a Fazer Sanca em Drywall com Acabamento Perfeito', duration: '40min', videoId: 'dQw4w9WgXcQ' },
     ],
     duration: '40 min',
     buttonText: 'Acessar Aulas',
@@ -125,7 +125,7 @@ export const mainModules: Module[] = [
     description: 'Crie móveis planejados com drywall de forma simples e prática.',
     imageId: 'drywall-acoustic',
     lessons: [
-        { id: '1', title: 'Aula 1: Criando móveis com Drywall', duration: '22min', videoId: 'dQw4w9WgXcQ' },
+        { id: '1', title: 'Aula 1: Como Fazer Móveis Planejados em Drywall (Passo a Passo Profissional)', duration: '22min', videoId: 'dQw4w9WgXcQ' },
     ],
     duration: '22 min',
     buttonText: 'Acessar Aulas',
@@ -173,6 +173,6 @@ export const pdfResources: PdfResource[] = [
     id: '1',
     title: 'Guia de Instalação de Drywall',
     description: 'Um guia completo para a instalação de drywall.',
-    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
+    url: 'https://docs.google.com/document/d/1X-z1g3_gTq2hQ_gA7kYwZ_zF-1jXnB3eVpI8cW_o/edit?usp=sharing',
   },
 ];
