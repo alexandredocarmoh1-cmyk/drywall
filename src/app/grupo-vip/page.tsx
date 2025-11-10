@@ -142,7 +142,7 @@ export default function GrupoVipPage() {
                 </AlertTitle>
                 <AlertDescription className="flex items-center">
                   Sem problema! É só mandar o comprovante no número do suporte
-                  que a gente te coloca no grupo VIP de alunas.
+                  que a gente te coloca no grupo VIP de alunos.
                 </AlertDescription>
               </Alert>
             </CardContent>
