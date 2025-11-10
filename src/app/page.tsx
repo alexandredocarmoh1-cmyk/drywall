@@ -1,13 +1,28 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { mainModules, bonusModules } from "@/app/data";
-import ModuleCard from "@/components/module-card";
-import { Separator } from "@/components/ui/separator";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
-import { MessageSquareText } from "lucide-react";
+'use client';
+
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { mainModules, bonusModules, pdfResources } from '@/app/data';
+import ModuleCard from '@/components/module-card';
+import { Separator } from '@/components/ui/separator';
+import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
+import { MessageSquareText } from 'lucide-react';
+import PdfModal from '@/components/pdf-modal';
 
 export default function Home() {
+  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
+
+  const handleModuleClick = (buttonLink: string | undefined, moduleId: string) => {
+    if (buttonLink === '#pdf-modal') {
+      const pdf = pdfResources.find((p) => p.id === moduleId);
+      if (pdf) {
+        setSelectedPdf(pdf);
+      }
+    }
+  };
+
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
@@ -28,7 +43,9 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonusModules.map((module) => (
-            <ModuleCard key={module.id} module={module} />
+            <div key={module.id} onClick={() => handleModuleClick(module.buttonLink, module.id)} className="cursor-pointer">
+              <ModuleCard module={module} />
+            </div>
           ))}
         </div>
 
@@ -52,6 +69,15 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+
+      {selectedPdf && (
+        <PdfModal
+          title={selectedPdf.title}
+          url={selectedPdf.url}
+          embedUrl={selectedPdf.embedUrl}
+          onClose={() => setSelectedPdf(null)}
+        />
+      )}
     </div>
   );
 }

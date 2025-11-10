@@ -142,7 +142,7 @@ export const bonusModules: Module[] = [
     description: 'PDF completo com as ferramentas essenciais pra começar no drywall.',
     imageId: 'drywall-tools',
     buttonText: 'Baixar PDF',
-    buttonLink: '#',
+    buttonLink: '#pdf-modal',
     meta: getMeta(1, '10 min', 'resource'),
   },
   {
@@ -151,7 +151,7 @@ export const bonusModules: Module[] = [
     description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
     imageId: 'drywall-suppliers',
     buttonText: 'Baixar Guia',
-    buttonLink: '#',
+    buttonLink: '#pdf-modal',
     meta: getMeta(1, '8 min', 'resource'),
   },
   {
@@ -171,17 +171,24 @@ export const allModules = [...mainModules, ...bonusModules];
 
 export const pdfResources: PdfResource[] = [
   {
-    id: '1',
+    id: 'walls',
     title: 'Guia de Instalação de Drywall',
     description: 'Um guia completo para a instalação de drywall.',
     url: 'https://docs.google.com/document/d/1X-z1g3_gTq2hQ_gA7kYwZ_zF-1jXnB3eVpI8cW_o/edit?usp=sharing',
     embedUrl: 'https://docs.google.com/document/d/1X-z1g3_gTq2hQ_gA7kYwZ_zF-1jXnB3eVpI8cW_o/preview'
   },
   {
-    id: '2',
+    id: 'tools',
     title: 'Lista de Ferramentas Essenciais',
     description: 'PDF com as ferramentas essenciais para começar no drywall.',
     url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
     embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
+  },
+  {
+    id: 'suppliers',
+    title: 'Guia de Fornecedores',
+    description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
+    url: 'https://docs.google.com/document/d/1s-rC7G5v3B-yM0xQ-8gJ-2nK3hY-uF9oP1qZ_w/edit?usp=sharing',
+    embedUrl: 'https://docs.google.com/document/d/1s-rC7G5v3B-yM0xQ-8gJ-2nK3hY-uF9oP1qZ_w/preview'
   },
 ];
