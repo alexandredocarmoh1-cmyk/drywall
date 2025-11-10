@@ -37,7 +37,7 @@ export const mainModules: Module[] = [
   {
     id: 'walls',
     title: 'Materiais de Apoio - PDF',
-    description: 'Aprenda a montar paredes retas, curvas, acústicas e corta-fogo com acabamento profissional.',
+    description: 'Baixe apostilas e listas com tudo que você precisa pra começar.',
     imageId: 'drywall-walls',
     lessons: 5,
     duration: '32 min',
@@ -48,7 +48,7 @@ export const mainModules: Module[] = [
   {
     id: 'ceilings',
     title: 'Instalação Completa do Drywall na Prática',
-    description: 'Monte forros rebaixados, tabicados e com iluminação indireta, direto da obra.',
+    description: 'Aprenda a instalar drywall do início ao fim, direto na prática.',
     imageId: 'drywall-ceilings',
     lessons: 4,
     duration: '27 min',
@@ -59,7 +59,7 @@ export const mainModules: Module[] = [
   {
     id: 'finishing',
     title: 'Parede em Drywall - Passo a Passo',
-    description: 'Aprenda a nivelar, aplicar massa e dar o toque final pra deixar o serviço impecável.',
+    description: 'Veja passo a passo como montar paredes firmes e bem acabadas.',
     imageId: 'drywall-finishing',
     lessons: 3,
     duration: '18 min',
@@ -70,7 +70,7 @@ export const mainModules: Module[] = [
   {
     id: 'budget',
     title: 'Forro de Drywall - Passo a Passo',
-    description: 'Descubra como calcular materiais, cobrar certo e aumentar seus lucros com segurança.',
+    description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
     imageId: 'drywall-budget',
     lessons: 4,
     duration: '25 min',
@@ -81,7 +81,7 @@ export const mainModules: Module[] = [
   {
     id: 'structures',
     title: 'Sanca em Drywall - Passo a Passo',
-    description: 'Domine a montagem de perfis, guias e montantes para garantir a solidez do seu projeto.',
+    description: 'Monte sancas modernas e decorativas pra deixar o ambiente mais bonito.',
     imageId: 'drywall-structures',
     lessons: 5,
     duration: '40 min',
@@ -92,7 +92,7 @@ export const mainModules: Module[] = [
   {
     id: 'acoustic-insulation',
     title: 'Móveis Planejados em Drywall',
-    description: 'Aprenda a usar lã de rocha e outros materiais para criar ambientes com som controlado.',
+    description: 'Crie móveis planejados com drywall de forma simples e prática.',
     imageId: 'drywall-acoustic',
     lessons: 3,
     duration: '22 min',
