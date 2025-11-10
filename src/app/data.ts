@@ -25,6 +25,7 @@ type PdfResource = {
   title: string;
   description: string;
   url: string;
+  embedUrl: string;
 };
 
 function getMeta(lessons: number, duration: string, type: 'video' | 'resource' | 'community') {
@@ -99,7 +100,7 @@ export const mainModules: Module[] = [
     description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
     imageId: 'drywall-budget',
     lessons: [
-      { id: '1,', title: 'Aula 1: Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
+      { id: '1', title: 'Aula 1: Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
     ],
     duration: '25 min',
     buttonText: 'Acessar Aulas',
@@ -174,5 +175,13 @@ export const pdfResources: PdfResource[] = [
     title: 'Guia de Instalação de Drywall',
     description: 'Um guia completo para a instalação de drywall.',
     url: 'https://docs.google.com/document/d/1X-z1g3_gTq2hQ_gA7kYwZ_zF-1jXnB3eVpI8cW_o/edit?usp=sharing',
+    embedUrl: 'https://docs.google.com/document/d/1X-z1g3_gTq2hQ_gA7kYwZ_zF-1jXnB3eVpI8cW_o/preview'
+  },
+  {
+    id: '2',
+    title: 'Lista de Ferramentas Essenciais',
+    description: 'PDF com as ferramentas essenciais para começar no drywall.',
+    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
+    embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
   },
 ];

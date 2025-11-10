@@ -1,15 +1,19 @@
 'use client';
 
+import { useState } from 'react';
 import { useParams } from 'next/navigation';
 import { allModules, pdfResources } from '@/app/data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import PdfModal from '@/components/pdf-modal';
 
 export default function ModulePage() {
   const params = useParams();
   const { slug } = params;
+
+  const [selectedPdf, setSelectedPdf] = useState<{ title: string; url: string; embedUrl: string } | null>(null);
 
   const module = allModules.find((m) => m.id === slug);
 
@@ -43,10 +47,8 @@ export default function ModulePage() {
                 <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
                 <p className="text-sm text-muted-foreground">{pdf.description}</p>
               </div>
-              <Button asChild>
-                <a href={pdf.url} target="_blank" rel="noopener noreferrer">
-                  Baixar PDF
-                </a>
+              <Button onClick={() => setSelectedPdf(pdf)}>
+                Visualizar PDF
               </Button>
             </div>
           ))}
@@ -89,6 +91,15 @@ export default function ModulePage() {
           </Button>
         </CardContent>
       </Card>
+      
+      {selectedPdf && (
+        <PdfModal
+          title={selectedPdf.title}
+          url={selectedPdf.url}
+          embedUrl={selectedPdf.embedUrl}
+          onClose={() => setSelectedPdf(null)}
+        />
+      )}
     </main>
   );
 }
