@@ -68,7 +68,6 @@ export default function ModulePage() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-lg font-headline text-primary">{lesson.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-1">📹 Duração: {lesson.duration}</p>
                 </div>
               </div>
             ))
