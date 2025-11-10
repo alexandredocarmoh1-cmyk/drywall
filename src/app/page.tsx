@@ -10,7 +10,6 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { MessageSquareText } from 'lucide-react';
 import PdfModal from '@/components/pdf-modal';
-import Link from 'next/link';
 
 export default function Home() {
   const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
@@ -33,9 +32,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {mainModules.map((module) => (
-            <Link key={module.id} href={module.buttonLink || '#'} passHref>
-              <ModuleCard module={module} />
-            </Link>
+            <ModuleCard key={module.id} module={module} />
           ))}
         </div>
 
@@ -52,9 +49,7 @@ export default function Home() {
               );
             }
             return (
-              <Link key={module.id} href={module.buttonLink || '#'} passHref>
-                <ModuleCard module={module} />
-              </Link>
+              <ModuleCard key={module.id} module={module} />
             );
           })}
         </div>

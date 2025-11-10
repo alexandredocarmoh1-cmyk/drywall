@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 import {
   Card,
   CardContent,
@@ -9,10 +10,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import * as LucideIcons from "lucide-react";
-import Link from "next/link";
 
 type Module = {
-  id?: string;
+  id: string;
   title: string;
   description: string;
   imageId?: string;
@@ -38,8 +38,8 @@ export default function ModuleCard({ module, reason }: ModuleCardProps) {
   const image = module.imageId
     ? PlaceHolderImages.find((img) => img.id === module.imageId)
     : PlaceHolderImages[1];
-
-  return (
+  
+  const CardContentComponent = () => (
     <Card className="flex flex-col bg-card overflow-hidden shadow-lg transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 h-full">
       {image && (
         <div className="relative">
@@ -82,5 +82,11 @@ export default function ModuleCard({ module, reason }: ModuleCardProps) {
         <Button className="w-full font-bold">{module.buttonText}</Button>
       </CardFooter>
     </Card>
+  );
+
+  return (
+    <Link href={module.buttonLink || '#'} passHref>
+        <CardContentComponent />
+    </Link>
   );
 }
