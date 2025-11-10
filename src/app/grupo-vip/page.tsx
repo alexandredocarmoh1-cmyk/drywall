@@ -121,21 +121,6 @@ export default function GrupoVipPage() {
                   <Send className="h-4 w-4 mr-2" />
                   Envie o comprovante no WhatsApp do suporte:
                 </h3>
-                <div className="relative">
-                  <p className="font-mono text-center text-lg bg-background/50 rounded-md p-2 text-foreground">
-                    {pixKey}
-                  </p>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8"
-                    onClick={() => {
-                      navigator.clipboard.writeText(pixKey.replace(/\D/g, ''));
-                    }}
-                  >
-                    <Copy className="h-4 w-4 text-muted-foreground" />
-                  </Button>
-                </div>
                 <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold !p-3 !h-auto">
                   <a href={whatsappLink} target="_blank">
                     <div className="flex flex-col md:flex-row md:items-center md:gap-2 text-center text-xs sm:text-sm justify-center">
