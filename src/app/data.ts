@@ -53,7 +53,7 @@ export const mainModules: Module[] = [
     id: 'walls',
     title: 'Materiais de Apoio - PDF',
     description: 'Baixe apostilas e listas com tudo que você precisa pra começar.',
-    imageId: 'drywall-walls',
+    imageId: 'drywall-budget',
     buttonText: 'Acessar Materiais',
     buttonLink: '/modulos/walls',
     meta: getMeta(5, '32 min', 'resource'),
@@ -98,7 +98,7 @@ export const mainModules: Module[] = [
     id: 'budget',
     title: 'Forro de Drywall - Passo a Passo',
     description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
-    imageId: 'drywall-budget',
+    imageId: 'drywall-walls',
     lessons: [
       { id: '1', title: 'Aula 1: Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
     ],
