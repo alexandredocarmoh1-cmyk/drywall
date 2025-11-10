@@ -39,14 +39,8 @@ export default function ModuleCard({ module, reason }: ModuleCardProps) {
     ? PlaceHolderImages.find((img) => img.id === module.imageId)
     : PlaceHolderImages[1];
 
-  const CardButton = () => (
-    <Button asChild className="w-full font-bold">
-      <Link href={module.buttonLink || "#"}>{module.buttonText}</Link>
-    </Button>
-  );
-
   return (
-    <Card className="flex flex-col bg-card overflow-hidden shadow-lg transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10">
+    <Card className="flex flex-col bg-card overflow-hidden shadow-lg transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 h-full">
       {image && (
         <div className="relative">
           <Image
@@ -85,11 +79,7 @@ export default function ModuleCard({ module, reason }: ModuleCardProps) {
         )}
       </CardContent>
       <CardFooter>
-        {module.buttonLink === '#pdf-modal' ? (
-          <Button className="w-full font-bold">{module.buttonText}</Button>
-        ) : (
-          <CardButton />
-        )}
+        <Button className="w-full font-bold">{module.buttonText}</Button>
       </CardFooter>
     </Card>
   );

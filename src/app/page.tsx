@@ -10,16 +10,15 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { MessageSquareText } from 'lucide-react';
 import PdfModal from '@/components/pdf-modal';
+import Link from 'next/link';
 
 export default function Home() {
   const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
 
-  const handleModuleClick = (buttonLink: string | undefined, moduleId: string) => {
-    if (buttonLink === '#pdf-modal') {
-      const pdf = pdfResources.find((p) => p.id === moduleId);
-      if (pdf) {
-        setSelectedPdf(pdf);
-      }
+  const handlePdfModuleClick = (moduleId: string) => {
+    const pdf = pdfResources.find((p) => p.id === moduleId);
+    if (pdf) {
+      setSelectedPdf(pdf);
     }
   };
 
@@ -34,7 +33,9 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {mainModules.map((module) => (
-            <ModuleCard key={module.id} module={module} />
+            <Link key={module.id} href={module.buttonLink || '#'} passHref>
+              <ModuleCard module={module} />
+            </Link>
           ))}
         </div>
 
@@ -42,11 +43,20 @@ export default function Home() {
           🎁 Bônus Especiais
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {bonusModules.map((module) => (
-            <div key={module.id} onClick={() => handleModuleClick(module.buttonLink, module.id)} className="cursor-pointer">
-              <ModuleCard module={module} />
-            </div>
-          ))}
+          {bonusModules.map((module) => {
+            if (module.buttonLink === '#pdf-modal') {
+              return (
+                <div key={module.id} onClick={() => handlePdfModuleClick(module.id)} className="cursor-pointer">
+                  <ModuleCard module={module} />
+                </div>
+              );
+            }
+            return (
+              <Link key={module.id} href={module.buttonLink || '#'} passHref>
+                <ModuleCard module={module} />
+              </Link>
+            );
+          })}
         </div>
 
         <section className="mt-20">
