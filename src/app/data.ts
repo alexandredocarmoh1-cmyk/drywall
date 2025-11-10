@@ -36,7 +36,7 @@ function getMeta(lessons: number, duration: string, type: 'video' | 'resource' |
 export const mainModules: Module[] = [
   {
     id: 'walls',
-    title: 'Paredes Drywall',
+    title: 'Materiais de Apoio - PDF',
     description: 'Aprenda a montar paredes retas, curvas, acústicas e corta-fogo com acabamento profissional.',
     imageId: 'drywall-walls',
     lessons: 5,
@@ -47,7 +47,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'ceilings',
-    title: 'Forros e Tetos',
+    title: 'Execução Completa do Drywall na Prática',
     description: 'Monte forros rebaixados, tabicados e com iluminação indireta, direto da obra.',
     imageId: 'drywall-ceilings',
     lessons: 4,
@@ -58,7 +58,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'finishing',
-    title: 'Acabamento e Pintura',
+    title: 'Parede em Drywall - Passo a Passo',
     description: 'Aprenda a nivelar, aplicar massa e dar o toque final pra deixar o serviço impecável.',
     imageId: 'drywall-finishing',
     lessons: 3,
@@ -69,7 +69,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'budget',
-    title: 'Cálculo e Orçamento',
+    title: 'Forro de Drywall - Passo a Passo',
     description: 'Descubra como calcular materiais, cobrar certo e aumentar seus lucros com segurança.',
     imageId: 'drywall-budget',
     lessons: 4,
@@ -80,7 +80,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'structures',
-    title: 'Estruturas Metálicas',
+    title: 'Sanca em Drywall - Passo a Passo',
     description: 'Domine a montagem de perfis, guias e montantes para garantir a solidez do seu projeto.',
     imageId: 'drywall-structures',
     lessons: 5,
@@ -91,7 +91,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'acoustic-insulation',
-    title: 'Isolamento Acústico',
+    title: 'Móveis Planejados em Drywall',
     description: 'Aprenda a usar lã de rocha e outros materiais para criar ambientes com som controlado.',
     imageId: 'drywall-acoustic',
     lessons: 3,
