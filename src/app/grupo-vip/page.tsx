@@ -109,7 +109,7 @@ export default function GrupoVipPage() {
                   />
                   <PixInfoRow
                     label="Nome:"
-                    value="PATRICK MOURA DE JESUS (Meu filho advogado)"
+                    value="PATRICK MOURA DE JESUS (Meu Sócio)"
                   />
                   <PixInfoRow label="Banco:" value="Inter S.A" />
                   <PixInfoRow label="Valor:" value="R$ 10,00" />
