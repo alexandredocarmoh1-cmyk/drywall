@@ -8,6 +8,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import PdfModal from '@/components/pdf-modal';
+import VideoPlayer from '@/components/video-player';
 
 export default function ModulePage() {
   const params = useParams();
@@ -58,15 +59,7 @@ export default function ModulePage() {
           {module.lessons && module.lessons.length > 0 ? (
             module.lessons.map((lesson) => (
               <div key={lesson.id} className="bg-card rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
-                <div className="aspect-video">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${lesson.videoId}`}
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                    title={lesson.title}
-                  ></iframe>
-                </div>
+                <VideoPlayer videoId={lesson.videoId} title={lesson.title} />
                 <div className="p-4">
                   <h3 className="text-lg font-headline text-primary">{lesson.title}</h3>
                 </div>
