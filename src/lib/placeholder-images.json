@@ -9,14 +9,14 @@
     {
       "id": "drywall-guides",
       "description": "Collection of PDF guides for drywall.",
-      "imageUrl": "https://images.unsplash.com/photo-1591674278612-6b773b4a1ad7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZGYlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzYyODA2MDAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/8QpG5k0.jpeg",
       "imageHint": "pdf documents"
     },
     {
       "id": "drywall-walls",
       "description": "A room with freshly installed drywall walls.",
-      "imageUrl": "https://images.unsplash.com/photo-1718816281207-3b253cff549a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcnl3YWxsJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "drywall construction"
+      "imageUrl": "https://i.imgur.com/O2rWr90.jpeg",
+      "imageHint": "drywall wall"
     },
     {
       "id": "drywall-practice-installation",
@@ -27,8 +27,8 @@
     {
       "id": "drywall-ceilings",
       "description": "A complex drywall ceiling with recessed lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1760281854666-fb763b7d0f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZWlsaW5nJTIwaW5zdGFsbGF0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ceiling installation"
+      "imageUrl": "https://i.imgur.com/ivCHU4Q.jpeg",
+      "imageHint": "drywall ceiling"
     },
     {
       "id": "drywall-finishing",
@@ -45,32 +45,32 @@
     {
       "id": "drywall-tools",
       "description": "A collection of essential tools for drywall installation.",
-      "imageUrl": "https://images.unsplash.com/photo-1502343019212-cc6a09783255?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25zdHJ1Y3Rpb24lMjB0b29sc3xlbnwwfHx8fDE3NjI2NDU4MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/Qk9l0jk.jpeg",
       "imageHint": "construction tools"
     },
     {
       "id": "drywall-suppliers",
       "description": "A warehouse of building and construction materials.",
-      "imageUrl": "https://images.unsplash.com/photo-1595414440701-da000c40df9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMG1hdGVyaWFsc3xlbnwwfHx8fDE3NjI2MjEzNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/pbjwsgW.jpeg",
       "imageHint": "building materials"
     },
     {
       "id": "drywall-community",
       "description": "A group of construction professionals in a discussion.",
-      "imageUrl": "https://images.unsplash.com/photo-1760992003923-ed5d455c1164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBkaXNjdXNzaW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/O8Q3edD.jpeg",
       "imageHint": "community discussion"
     },
     {
       "id": "drywall-structures",
       "description": "Metal stud framing for drywall.",
-      "imageUrl": "https://images.unsplash.com/photo-1761479250421-a645c2fa046e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMHN0dWRzfGVufDB8fHx8MTc2Mjc4MjQzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "metal studs"
+      "imageUrl": "https://i.imgur.com/Mrhjc4F.jpeg",
+      "imageHint": "drywall cove"
     },
     {
       "id": "drywall-acoustic",
       "description": "Acoustic foam panels for sound insulation.",
-      "imageUrl": "https://images.unsplash.com/photo-1613830689755-3f89b57a96fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhY291c3RpYyUyMGZvYW18ZW58MHx8fHwxNzYyNzIwMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "acoustic foam"
+      "imageUrl": "https://i.imgur.com/kFvVjPH.jpeg",
+      "imageHint": "drywall furniture"
     }
   ]
 }

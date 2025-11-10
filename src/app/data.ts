@@ -85,7 +85,7 @@ export const mainModules: Module[] = [
     id: 'finishing',
     title: 'Parede em Drywall - Passo a Passo',
     description: 'Veja passo a passo como montar paredes firmes e bem acabadas.',
-    imageId: 'drywall-finishing',
+    imageId: 'drywall-walls',
     lessons: [
       { id: '1', title: 'Aula 1: Montagem Completa de Parede em Drywall (Passo a Passo Prático)', duration: '18min', videoId: 'dQw4w9WgXcQ' },
     ],
@@ -98,7 +98,7 @@ export const mainModules: Module[] = [
     id: 'budget',
     title: 'Forro de Drywall - Passo a Passo',
     description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
-    imageId: 'drywall-walls',
+    imageId: 'drywall-ceilings',
     lessons: [
       { id: '1', title: 'Aula 1: Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
     ],
