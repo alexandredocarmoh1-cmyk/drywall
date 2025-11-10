@@ -53,7 +53,7 @@ export const mainModules: Module[] = [
     id: 'walls',
     title: 'Materiais de Apoio - PDF',
     description: 'Baixe apostilas e listas com tudo que você precisa pra começar.',
-    imageId: 'drywall-budget',
+    imageId: 'drywall-guides',
     buttonText: 'Acessar Materiais',
     buttonLink: '/modulos/walls',
     meta: getMeta(5, '32 min', 'resource'),
