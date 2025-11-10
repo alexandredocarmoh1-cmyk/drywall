@@ -10,7 +10,6 @@ import {
   Check,
   Send,
   Info,
-  Heart,
   ArrowLeft,
   ArrowRight
 } from 'lucide-react';
@@ -152,7 +151,6 @@ export default function GrupoVipPage() {
                 <AlertDescription className="flex items-center">
                   Sem problema! É só mandar o comprovante no número do suporte
                   que a gente te coloca no grupo VIP de alunas.
-                  <Heart className="h-4 w-4 ml-1.5 text-red-500 fill-current" />
                 </AlertDescription>
               </Alert>
             </CardContent>
