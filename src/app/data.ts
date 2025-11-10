@@ -62,7 +62,7 @@ export const mainModules: Module[] = [
     id: 'ceilings',
     title: 'Instalação Completa do Drywall na Prática',
     description: 'Aprenda a instalar drywall do início ao fim, direto na prática.',
-    imageId: 'drywall-ceilings',
+    imageId: 'drywall-practice-installation',
     lessons: [
       { id: '1', title: 'Aula 1: Passo a passo da preparação corte e medidas', duration: '8min 32s', videoId: 'dQw4w9WgXcQ' },
       { id: '2', title: 'Aula 2: Teto', duration: '10min 15s', videoId: 'dQw4w9WgXcQ' },

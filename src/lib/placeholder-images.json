@@ -19,6 +19,12 @@
       "imageHint": "drywall construction"
     },
     {
+      "id": "drywall-practice-installation",
+      "description": "A worker installing drywall.",
+      "imageUrl": "https://i.imgur.com/F8LjjYK.jpeg",
+      "imageHint": "drywall installation"
+    },
+    {
       "id": "drywall-ceilings",
       "description": "A complex drywall ceiling with recessed lighting.",
       "imageUrl": "https://images.unsplash.com/photo-1760281854666-fb763b7d0f47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjZWlsaW5nJTIwaW5zdGFsbGF0aW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
