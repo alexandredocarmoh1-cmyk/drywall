@@ -78,6 +78,28 @@ export const mainModules: Module[] = [
     buttonLink: '#',
     meta: getMeta(4, '25 min', 'video'),
   },
+  {
+    id: 'structures',
+    title: 'Estruturas Metálicas',
+    description: 'Domine a montagem de perfis, guias e montantes para garantir a solidez do seu projeto.',
+    imageId: 'drywall-structures',
+    lessons: 5,
+    duration: '40 min',
+    buttonText: 'Acessar Aulas',
+    buttonLink: '#',
+    meta: getMeta(5, '40 min', 'video'),
+  },
+  {
+    id: 'acoustic-insulation',
+    title: 'Isolamento Acústico',
+    description: 'Aprenda a usar lã de rocha e outros materiais para criar ambientes com som controlado.',
+    imageId: 'drywall-acoustic',
+    lessons: 3,
+    duration: '22 min',
+    buttonText: 'Acessar Aulas',
+    buttonLink: '#',
+    meta: getMeta(3, '22 min', 'video'),
+  },
 ];
 
 export const bonusModules: Module[] = [

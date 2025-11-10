@@ -47,6 +47,18 @@
       "description": "A group of construction professionals in a discussion.",
       "imageUrl": "https://images.unsplash.com/photo-1760992003923-ed5d455c1164?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBkaXNjdXNzaW9ufGVufDB8fHx8MTc2MjY5ODgyNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "community discussion"
+    },
+    {
+      "id": "drywall-structures",
+      "description": "Metal stud framing for drywall.",
+      "imageUrl": "https://images.unsplash.com/photo-1761479250421-a645c2fa046e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMHN0dWRzfGVufDB8fHx8MTc2Mjc4MjQzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal studs"
+    },
+    {
+      "id": "drywall-acoustic",
+      "description": "Acoustic foam panels for sound insulation.",
+      "imageUrl": "https://images.unsplash.com/photo-1613830689755-3f89b57a96fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhY291c3RpYyUyMGZvYW18ZW58MHx8fHwxNzYyNzIwMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "acoustic foam"
     }
   ]
 }
