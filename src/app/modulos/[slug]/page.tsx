@@ -34,11 +34,6 @@ export default function ModulePage() {
         </Button>
       </Link>
 
-      <div className="bg-card border-l-4 border-primary rounded-lg p-6 mb-8 shadow-lg">
-        <h2 className="text-2xl font-bold text-primary mb-2">{module.title}</h2>
-        <p className="text-muted-foreground">{module.description}</p>
-      </div>
-
       {isPdfModule ? (
         <div className="space-y-4">
           {pdfResources.map((pdf) => (
