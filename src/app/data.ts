@@ -47,7 +47,7 @@ export const mainModules: Module[] = [
   },
   {
     id: 'ceilings',
-    title: 'Execução Completa do Drywall na Prática',
+    title: 'Instalação Completa do Drywall na Prática',
     description: 'Monte forros rebaixados, tabicados e com iluminação indireta, direto da obra.',
     imageId: 'drywall-ceilings',
     lessons: 4,
