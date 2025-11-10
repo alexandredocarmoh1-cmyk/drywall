@@ -135,7 +135,7 @@ export default function GrupoVipPage() {
                     <Copy className="h-4 w-4 text-muted-foreground" />
                   </Button>
                 </div>
-                <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold">
+                <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold text-xs sm:text-sm">
                   <a href={whatsappLink} target="_blank">
                     CLIQUE AQUI PARA ENVIAR O COMPROVANTE
                     <ArrowRight className="ml-2 h-4 w-4" />
