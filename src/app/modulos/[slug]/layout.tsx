@@ -1,22 +1,28 @@
 import Image from "next/image";
 import Link from 'next/link';
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function ModuleLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const logo = PlaceHolderImages.find((img) => img.id === "drywall-logo");
+
   return (
     <div className="min-h-screen bg-background">
       <header className="py-10 text-center">
         <Link href="/">
-          <Image
-            src="https://drive.google.com/uc?export=view&id=1JFtRMJQZMwcI48n8LQ8VD2b63jEVyxRD"
-            alt="Logo Especialista em Drywall"
-            width={110}
-            height={110}
-            className="mx-auto mb-4 rounded-full"
-          />
+          {logo && (
+            <Image
+              src={logo.imageUrl}
+              alt="Logo Especialista em Drywall"
+              width={110}
+              height={110}
+              className="mx-auto mb-4 rounded-full"
+              data-ai-hint={logo.imageHint}
+            />
+          )}
         </Link>
       </header>
 
