@@ -88,10 +88,10 @@ export default function GrupoVipPage() {
             <CardContent className="p-6 space-y-6">
               <Alert className="bg-yellow-500/10 border-yellow-500/30 text-yellow-200">
                 <AlertTriangle className="h-4 w-4 !text-yellow-400" />
-                <AlertTitle className="text-yellow-300 font-bold">
+                <AlertTitle className="text-primary text-lg font-bold">
                   Acesso Bloqueado!
                 </AlertTitle>
-                <AlertDescription>
+                <AlertDescription className="text-base text-primary/90">
                   Esse bônus será liberado após o PIX de R$10.
                 </AlertDescription>
               </Alert>
