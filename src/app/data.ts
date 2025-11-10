@@ -87,7 +87,7 @@ export const mainModules: Module[] = [
     description: 'Veja passo a passo como montar paredes firmes e bem acabadas.',
     imageId: 'drywall-walls',
     lessons: [
-      { id: '1', title: 'Montagem Completa de Parede em Drywall (Passo a Passo Prático)', duration: '18min', videoId: 'dQw4w9WgXcQ' },
+      { id: '1', title: 'Montagem Completa de Parede em Drywall (Passo a Passo Prático)', duration: '18min', videoId: 'YXRcEY-ZavM' },
     ],
     duration: '18 min',
     buttonText: 'Acessar Aulas',
@@ -100,7 +100,7 @@ export const mainModules: Module[] = [
     description: 'Aprenda a fazer forros bonitos, nivelados e seguros em drywall.',
     imageId: 'drywall-ceilings',
     lessons: [
-      { id: '1', title: 'Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'dQw4w9WgXcQ' },
+      { id: '1', title: 'Instalação Completa de Forro Tabicado em Drywall (Passo a Passo)', duration: '25min', videoId: 'p9yHpVjGlXU' },
     ],
     duration: '25 min',
     buttonText: 'Acessar Aulas',
@@ -113,7 +113,7 @@ export const mainModules: Module[] = [
     description: 'Monte sancas modernas e decorativas pra deixar o ambiente mais bonito.',
     imageId: 'drywall-structures',
     lessons: [
-        { id: '1', title: 'Aprenda a Fazer Sanca em Drywall com Acabamento Perfeito', duration: '40min', videoId: 'dQw4w9WgXcQ' },
+        { id: '1', title: 'Aprenda a Fazer Sanca em Drywall com Acabamento Perfeito', duration: '40min', videoId: 'C8Uw6yGEE0A' },
     ],
     duration: '40 min',
     buttonText: 'Acessar Aulas',
@@ -126,7 +126,7 @@ export const mainModules: Module[] = [
     description: 'Crie móveis planejados com drywall de forma simples e prática.',
     imageId: 'drywall-acoustic',
     lessons: [
-        { id: '1', title: 'Como Fazer Móveis Planejados em Drywall (Passo a Passo Profissional)', duration: '22min', videoId: 'dQw4w9WgXcQ' },
+        { id: '1', title: 'Como Fazer Móveis Planejados em Drywall (Passo a Passo Profissional)', duration: '22min', videoId: 'hL2YQ0V08SQ' },
     ],
     duration: '22 min',
     buttonText: 'Acessar Aulas',
