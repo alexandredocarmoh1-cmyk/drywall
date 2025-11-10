@@ -5,6 +5,7 @@ import { allModules, pdfResources } from '@/app/data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function ModulePage() {
   const params = useParams();
@@ -23,7 +24,7 @@ export default function ModulePage() {
     );
   }
 
-  const isPdfModule = module.id === 'walls';
+  const isPdfModule = module.meta.some(meta => meta.icon === 'FileText');
 
   return (
     <main className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
@@ -74,6 +75,20 @@ export default function ModulePage() {
           )}
         </div>
       )}
+
+      <Card className="mt-12 text-center shadow-lg">
+        <CardContent className="p-8">
+          <h3 className="text-xl font-bold mb-2">
+            Parabéns pelo progresso! 🎉
+          </h3>
+          <p className="text-muted-foreground mb-6">
+            Continue sua jornada explorando outros módulos disponíveis.
+          </p>
+          <Button asChild size="lg">
+            <Link href="/">Ver Todos os Módulos</Link>
+          </Button>
+        </CardContent>
+      </Card>
     </main>
   );
 }
