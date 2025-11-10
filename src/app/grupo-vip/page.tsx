@@ -138,13 +138,11 @@ export default function GrupoVipPage() {
                 </div>
                 <Button asChild size="lg" className="w-full bg-verde-cta text-white hover:bg-verde-cta/90 font-bold !p-3 !h-auto">
                   <a href={whatsappLink} target="_blank">
-                    <div className="flex flex-col md:flex-row md:items-center md:gap-2 text-center text-xs sm:text-sm">
+                    <div className="flex flex-col md:flex-row md:items-center md:gap-2 text-center text-xs sm:text-sm justify-center">
                       <div className="md:hidden">CLIQUE AQUI PARA</div>
                       <div className="flex items-center justify-center gap-2">
-                          <MessageSquare className="h-4 w-4 md:hidden" />
                           <span className="md:hidden">ENVIAR O</span>
                            <span className="hidden md:inline">CLIQUE AQUI PARA ENVIAR O COMPROVANTE</span>
-                          <ArrowRight className="h-4 w-4" />
                       </div>
                       <div className="md:hidden">COMPROVANTE</div>
                     </div>
