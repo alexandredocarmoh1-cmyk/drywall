@@ -56,7 +56,7 @@ export const mainModules: Module[] = [
     imageId: 'drywall-guides',
     buttonText: 'Acessar Materiais',
     buttonLink: '/modulos/walls',
-    meta: getMeta(5, '32 min', 'resource'),
+    meta: getMeta(3, '3 guias', 'resource'),
   },
   {
     id: 'ceilings',
@@ -170,12 +170,12 @@ export const bonusModules: Module[] = [
 export const allModules = [...mainModules, ...bonusModules];
 
 export const pdfResources: PdfResource[] = [
-  {
+    {
     id: 'walls-1',
-    title: 'Apostila Completa Drywall',
-    description: 'Um guia completo para a instalação de drywall.',
-    url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
+    title: 'Manual de Montagem Drywall',
+    description: 'Instruções passo a passo para a montagem de drywall.',
+    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
+    embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
   },
   {
     id: 'walls-2',
@@ -186,23 +186,9 @@ export const pdfResources: PdfResource[] = [
   },
   {
     id: 'walls-3',
-    title: 'Manual de Montagem Drywall',
-    description: 'Instruções passo a passo para a montagem de drywall.',
-    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
-  },
-  {
-    id: 'tools',
-    title: 'Lista de Ferramentas Essenciais',
-    description: 'PDF com as ferramentas essenciais para começar no drywall.',
-    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
-  },
-  {
-    id: 'suppliers',
-    title: 'Guia de Fornecedores',
-    description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
-    url: 'https://docs.google.com/document/d/1s-rC7G5v3B-yM0xQ-8gJ-2nK3hY-uF9oP1qZ_w/edit?usp=sharing',
-    embedUrl: 'https://docs.google.com/document/d/1s-rC7G5v3B-yM0xQ-8gJ-2nK3hY-uF9oP1qZ_w/preview'
+    title: 'Apostila Completa Drywall',
+    description: 'Um guia completo para a instalação de drywall.',
+    url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
+    embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
   },
 ];
