@@ -14,7 +14,7 @@ export default function ModulePage() {
   const params = useParams();
   const { slug } = params;
 
-  const [selectedPdf, setSelectedPdf] = useState<{ title: string; url: string; embedUrl: string } | null>(null);
+  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
 
   const module = allModules.find((m) => m.id === slug);
 
@@ -46,7 +46,6 @@ export default function ModulePage() {
             <div key={pdf.id} className="bg-card p-6 rounded-lg shadow-md flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
-                <p className="text-sm text-muted-foreground">{pdf.description}</p>
               </div>
               <Button onClick={() => setSelectedPdf(pdf)}>
                 Visualizar PDF

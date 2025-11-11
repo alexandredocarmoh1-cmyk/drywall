@@ -23,7 +23,6 @@ type Module = {
 type PdfResource = {
   id: string;
   title: string;
-  description: string;
   url: string;
   embedUrl: string;
 };
@@ -173,21 +172,18 @@ export const pdfResources: PdfResource[] = [
     {
     id: 'walls-1',
     title: 'Guia Completo Sobre Drywall',
-    description: 'Instruções passo a passo para a montagem de drywall.',
     url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
     embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
   },
   {
     id: 'walls-2',
     title: 'Drywall Lucrativo',
-    description: 'Explore diferentes sistemas e soluções em drywall.',
     url: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/view?usp=sharing',
     embedUrl: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/preview'
   },
   {
     id: 'walls-3',
     title: 'Como Instalar Drywall no Forro',
-    description: 'Um guia completo para a instalação de drywall.',
     url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
     embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
   },
