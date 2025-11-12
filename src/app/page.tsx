@@ -16,14 +16,7 @@ export default function Home() {
   const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResourceGroups)[string][0] | null>(null);
 
   const handlePdfModuleClick = (moduleId: string) => {
-    // This logic now only applies to modules that should open a modal.
-    // 'suppliers' module will now navigate to its own page.
-    if (moduleId === 'tools') {
-      const pdfs = pdfResourceGroups[moduleId];
-      if (pdfs && pdfs.length === 1) {
-        setSelectedPdf(pdfs[0]);
-      }
-    }
+    // This logic is no longer needed as all bonus PDF modules now navigate to their own page
   };
 
   return (

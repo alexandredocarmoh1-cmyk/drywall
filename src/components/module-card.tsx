@@ -84,35 +84,34 @@ export default function ModuleCard({ module, reason, onButtonClick }: ModuleCard
         </CardContent>
         <CardFooter>
           <Button 
-            asChild={!isPdfModal}
+            asChild={!isPdfModal && !isExternalLink}
             onClick={isPdfModal ? onButtonClick : undefined}
             className="w-full font-bold"
           >
-            {isPdfModal ? (
+            {isExternalLink ? (
+                <a href={module.buttonLink} target="_blank" rel="noopener noreferrer">{module.buttonText}</a>
+            ) : isPdfModal ? (
               <div>{module.buttonText}</div>
             ) : (
-              <div >{module.buttonText}</div>
+                <Link href={module.buttonLink || '#'}>{module.buttonText}</Link>
             )}
           </Button>
         </CardFooter>
       </Card>
   );
 
-  if (isPdfModal || !module.buttonLink) {
-    return cardContent;
-  }
-  
-  if (isExternalLink) {
+  const Wrapper = ({ children }: { children: React.ReactNode }) => {
+    if (isExternalLink || isPdfModal) {
+      return <>{children}</>;
+    }
     return (
-      <a href={module.buttonLink} target="_blank" rel="noopener noreferrer">
-        {cardContent}
-      </a>
+      <Link href={module.buttonLink || '#'} passHref>
+        {children}
+      </Link>
     );
-  }
-
-  return (
-    <Link href={module.buttonLink} passHref>
-      {cardContent}
-    </Link>
-  );
+  };
+  
+  // This logic is simplified. The Button component now handles the link.
+  // The Card itself is no longer wrapped in a Link or an anchor tag.
+  return cardContent;
 }
