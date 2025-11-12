@@ -20,8 +20,10 @@ export type EmbedModalProps = {
 };
 
 export default function EmbedModal({ title, url, embedUrl, onClose, contentType }: EmbedModalProps) {
+  // For Google Sheets, the download link needs to be transformed.
+  // This replaces the viewing part of the URL with an export command.
   const downloadUrl = contentType === 'sheet' 
-    ? url.replace('/edit?usp=sharing', '/export?format=xlsx') 
+    ? url.split('/edit')[0] + '/export?format=xlsx'
     : url;
 
   return (
@@ -34,11 +36,13 @@ export default function EmbedModal({ title, url, embedUrl, onClose, contentType 
             <span className="sr-only">Fechar</span>
           </DialogClose>
         </DialogHeader>
-        <div className="flex-grow p-4">
+        <div className="flex-grow p-4 bg-black/50">
           <iframe
             src={embedUrl}
-            className="w-full h-full border-none"
+            className="w-full h-full border-none bg-white"
             title={title}
+            // sandbox attribute to increase security, but might break some sheet features
+            // sandbox="allow-scripts allow-same-origin allow-forms"
           ></iframe>
         </div>
         <DialogFooter className="p-4 border-t justify-end space-x-2">

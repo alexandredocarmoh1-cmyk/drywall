@@ -141,7 +141,7 @@ export const bonusModules: Module[] = [
     description: 'PDF completo com as ferramentas essenciais pra começar no drywall.',
     imageId: 'drywall-tools',
     buttonText: 'Visualizar Lista',
-    buttonLink: '/modulos/tools',
+    buttonLink: '#',
     meta: getMeta(1, '10 min', 'resource'),
   },
   {
@@ -159,7 +159,7 @@ export const bonusModules: Module[] = [
     description: 'Um modelo pronto para você adaptar e enviar orçamentos profissionais para seus clientes.',
     imageId: 'drywall-budget',
     buttonText: 'Visualizar Modelo',
-    buttonLink: 'https://docs.google.com/spreadsheets/d/1LPg9AxxxKx0x4ZNc6bmnsnUBmqOD5XQc/edit?usp=sharing&ouid=113534566966728872736&rtpof=true&sd=true',
+    buttonLink: '#',
     meta: getMeta(1, '5 min', 'resource'),
   },
   {
@@ -215,3 +215,11 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
         }
     ]
   };
+
+  export const budgetSheetResource: PdfResource = {
+    id: 'budget-model-1',
+    title: 'Modelo de Orçamento pra Drywall',
+    url: 'https://docs.google.com/spreadsheets/d/1LPg9AxxxKx0x4ZNc6bmnsnUBmqOD5XQc/edit?usp=sharing&ouid=113534566966728872736&rtpof=true&sd=true',
+    embedUrl: 'https://docs.google.com/spreadsheets/d/1LPg9AxxxKx0x4ZNc6bmnsnUBmqOD5XQc/edit?usp=sharing&ouid=113534566966728872736&rtpof=true&sd=true'
+  }
+  

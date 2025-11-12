@@ -4,20 +4,39 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { mainModules, bonusModules, pdfResourceGroups } from '@/app/data';
+import { mainModules, bonusModules, pdfResourceGroups, budgetSheetResource } from '@/app/data';
 import ModuleCard from '@/components/module-card';
 import { Separator } from '@/components/ui/separator';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { MessageSquareText } from 'lucide-react';
-import PdfModal from '@/components/pdf-modal';
+import EmbedModal, { type EmbedModalProps } from '@/components/embed-modal';
+
+type SelectedContent = {
+  type: 'pdf' | 'sheet';
+  resource: (typeof pdfResourceGroups)[string][0];
+}
 
 export default function Home() {
-  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResourceGroups)[string][0] | null>(null);
+  const [selectedContent, setSelectedContent] = useState<SelectedContent | null>(null);
 
-  const handlePdfModuleClick = (moduleId: string) => {
-    // This logic is no longer needed as all bonus PDF modules now navigate to their own page
+  const handleModuleButtonClick = (moduleId: string) => {
+    if (moduleId === 'tools') {
+      const pdf = pdfResourceGroups.tools?.[0];
+      if (pdf) {
+        setSelectedContent({ type: 'pdf', resource: pdf });
+      }
+    } else if (moduleId === 'budget-model') {
+      setSelectedContent({ type: 'sheet', resource: budgetSheetResource });
+    }
   };
+
+  const modalProps: Omit<EmbedModalProps, 'onClose'> | null = selectedContent ? {
+    title: selectedContent.resource.title,
+    url: selectedContent.resource.url,
+    embedUrl: selectedContent.resource.embedUrl,
+    contentType: selectedContent.type,
+  } : null;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -39,7 +58,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonusModules.map((module) => (
-             <ModuleCard key={module.id} module={module} onButtonClick={() => handlePdfModuleClick(module.id)} />
+             <ModuleCard key={module.id} module={module} onButtonClick={() => handleModuleButtonClick(module.id)} />
           ))}
         </div>
 
@@ -64,12 +83,10 @@ export default function Home() {
       </main>
       <Footer />
 
-      {selectedPdf && (
-        <PdfModal
-          title={selectedPdf.title}
-          url={selectedPdf.url}
-          embedUrl={selectedPdf.embedUrl}
-          onClose={() => setSelectedPdf(null)}
+      {selectedContent && modalProps && (
+        <EmbedModal
+          {...modalProps}
+          onClose={() => setSelectedContent(null)}
         />
       )}
     </div>

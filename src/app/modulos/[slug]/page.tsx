@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import PdfModal from '@/components/pdf-modal';
+import EmbedModal from '@/components/embed-modal';
 import VideoPlayer from '@/components/video-player';
 
 export default function ModulePage() {
@@ -46,9 +46,7 @@ export default function ModulePage() {
           {pdfResources.length > 0 ? (
             pdfResources.map((pdf) => (
               <div key={pdf.id} className="bg-card p-6 rounded-lg shadow-md flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
-                </div>
+                <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
                 <Button onClick={() => setSelectedPdf(pdf)}>
                   Visualizar PDF
                 </Button>
@@ -90,11 +88,12 @@ export default function ModulePage() {
       </Card>
       
       {selectedPdf && (
-        <PdfModal
+        <EmbedModal
           title={selectedPdf.title}
           url={selectedPdf.url}
           embedUrl={selectedPdf.embedUrl}
           onClose={() => setSelectedPdf(null)}
+          contentType="pdf"
         />
       )}
     </main>
