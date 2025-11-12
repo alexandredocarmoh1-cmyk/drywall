@@ -39,7 +39,7 @@ export default function Home() {
   } : null;
 
   const whatsappMessage = encodeURIComponent('Olá! Vim do curso Especialista em Drywall e preciso de ajuda.');
-  const whatsappLink = `https://wa.me/5599999999999?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/5522999576954?text=${whatsappMessage}`;
 
 
   return (
