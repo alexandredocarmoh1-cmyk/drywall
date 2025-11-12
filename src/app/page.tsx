@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { mainModules, bonusModules, pdfResources } from '@/app/data';
+import { mainModules, bonusModules, pdfResourceGroups } from '@/app/data';
 import ModuleCard from '@/components/module-card';
 import { Separator } from '@/components/ui/separator';
 import Header from '@/components/layout/header';
@@ -12,12 +13,14 @@ import { MessageSquareText } from 'lucide-react';
 import PdfModal from '@/components/pdf-modal';
 
 export default function Home() {
-  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
+  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResourceGroups)[string][0] | null>(null);
 
   const handlePdfModuleClick = (moduleId: string) => {
-    const pdf = pdfResources.find((p) => p.id === moduleId);
-    if (pdf) {
-      setSelectedPdf(pdf);
+    // This logic is now only for single-pdf modals, which we are moving away from.
+    // Kept here in case you want to use it for something else later.
+    const pdfs = pdfResourceGroups[moduleId];
+    if (pdfs && pdfs.length === 1) {
+      setSelectedPdf(pdfs[0]);
     }
   };
 
@@ -32,7 +35,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {mainModules.map((module) => (
-            <ModuleCard key={module.id} module={module} />
+             <ModuleCard key={module.id} module={module} />
           ))}
         </div>
 
@@ -40,18 +43,9 @@ export default function Home() {
           🎁 Bônus Especiais
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {bonusModules.map((module) => {
-            if (module.buttonLink === '#pdf-modal') {
-              return (
-                <div key={module.id} onClick={() => handlePdfModuleClick(module.id)} className="cursor-pointer">
-                  <ModuleCard module={module} />
-                </div>
-              );
-            }
-            return (
-              <ModuleCard key={module.id} module={module} />
-            );
-          })}
+          {bonusModules.map((module) => (
+             <ModuleCard key={module.id} module={module} />
+          ))}
         </div>
 
         <section className="mt-20">

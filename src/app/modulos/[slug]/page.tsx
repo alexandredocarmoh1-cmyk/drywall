@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
-import { allModules, pdfResources } from '@/app/data';
+import { allModules, pdfResourceGroups } from '@/app/data';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,11 +12,12 @@ import VideoPlayer from '@/components/video-player';
 
 export default function ModulePage() {
   const params = useParams();
-  const { slug } = params;
+  const slug = params.slug as string;
 
-  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResources)[0] | null>(null);
+  const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResourceGroups)[string][0] | null>(null);
 
   const module = allModules.find((m) => m.id === slug);
+  const pdfResources = pdfResourceGroups[slug] || [];
 
   if (!module) {
     return (
@@ -42,16 +43,20 @@ export default function ModulePage() {
 
       {isPdfModule ? (
         <div className="space-y-4">
-          {pdfResources.map((pdf) => (
-            <div key={pdf.id} className="bg-card p-6 rounded-lg shadow-md flex items-center justify-between">
-              <div>
-                <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
+          {pdfResources.length > 0 ? (
+            pdfResources.map((pdf) => (
+              <div key={pdf.id} className="bg-card p-6 rounded-lg shadow-md flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">{pdf.title}</h3>
+                </div>
+                <Button onClick={() => setSelectedPdf(pdf)}>
+                  Visualizar PDF
+                </Button>
               </div>
-              <Button onClick={() => setSelectedPdf(pdf)}>
-                Visualizar PDF
-              </Button>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-center text-muted-foreground">Nenhum material de apoio disponível neste módulo ainda.</p>
+          )}
         </div>
       ) : (
         <div className="space-y-6">

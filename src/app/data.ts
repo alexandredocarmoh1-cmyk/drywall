@@ -141,7 +141,7 @@ export const bonusModules: Module[] = [
     description: 'PDF completo com as ferramentas essenciais pra começar no drywall.',
     imageId: 'drywall-tools',
     buttonText: 'Visualizar Lista',
-    buttonLink: '#pdf-modal',
+    buttonLink: '/modulos/tools',
     meta: getMeta(1, '10 min', 'resource'),
   },
   {
@@ -150,7 +150,7 @@ export const bonusModules: Module[] = [
     description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
     imageId: 'drywall-suppliers',
     buttonText: 'Visualizar Lista',
-    buttonLink: '#pdf-modal',
+    buttonLink: '/modulos/suppliers',
     meta: getMeta(1, '8 min', 'resource'),
   },
   {
@@ -168,23 +168,27 @@ export const bonusModules: Module[] = [
 
 export const allModules = [...mainModules, ...bonusModules];
 
-export const pdfResources: PdfResource[] = [
-    {
-    id: 'walls-1',
-    title: 'Guia Completo Sobre Drywall',
-    url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
-  },
-  {
-    id: 'walls-2',
-    title: 'Drywall Lucrativo',
-    url: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/preview'
-  },
-  {
-    id: 'walls-3',
-    title: 'Como Instalar Drywall no Forro',
-    url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
-    embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
-  },
-];
+export const pdfResourceGroups: Record<string, PdfResource[]> = {
+    walls: [
+        {
+        id: 'walls-1',
+        title: 'Guia Completo Sobre Drywall',
+        url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/preview'
+      },
+      {
+        id: 'walls-2',
+        title: 'Drywall Lucrativo',
+        url: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1lBAZQRveyVeHFnWgh9x6_SdMba7a0AvO/preview'
+      },
+      {
+        id: 'walls-3',
+        title: 'Como Instalar Drywall no Forro',
+        url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
+      },
+    ],
+    tools: [],
+    suppliers: []
+  };
