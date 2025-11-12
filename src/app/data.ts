@@ -149,7 +149,7 @@ export const bonusModules: Module[] = [
     title: 'Lista de Materiais e Fornecedor',
     description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
     imageId: 'drywall-suppliers',
-    buttonText: 'Visualizar Guia',
+    buttonText: 'Visualizar Lista',
     buttonLink: '#pdf-modal',
     meta: getMeta(1, '8 min', 'resource'),
   },
