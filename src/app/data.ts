@@ -154,6 +154,15 @@ export const bonusModules: Module[] = [
     meta: getMeta(1, '8 min', 'resource'),
   },
   {
+    id: 'budget-model',
+    title: 'Modelo de Orçamento pra Drywall',
+    description: 'Um modelo pronto para você adaptar e enviar orçamentos profissionais para seus clientes.',
+    imageId: 'drywall-budget',
+    buttonText: 'Visualizar Modelo',
+    buttonLink: '#',
+    meta: getMeta(1, '5 min', 'resource'),
+  },
+  {
     id: 'community',
     title: 'Grupo VIP no WhatsApp',
     description: 'Entre no grupo de alunos pra trocar experiências e participar dos sorteios mensais.',
