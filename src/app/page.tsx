@@ -2,15 +2,19 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { mainModules, bonusModules, pdfResourceGroups, budgetSheetResource } from '@/app/data';
 import ModuleCard from '@/components/module-card';
 import { Separator } from '@/components/ui/separator';
 import Header from '@/components/layout/header';
-import Footer from '@/components/layout/footer';
 import { MessageSquareText } from 'lucide-react';
-import EmbedModal, { type EmbedModalProps } from '@/components/embed-modal';
+import type { EmbedModalProps } from '@/components/embed-modal';
+
+// Lazy load components that are not critical for the initial page load
+const EmbedModal = dynamic(() => import('@/components/embed-modal'));
+const Footer = dynamic(() => import('@/components/layout/footer'));
 
 type SelectedContent = {
   type: 'pdf' | 'sheet';
