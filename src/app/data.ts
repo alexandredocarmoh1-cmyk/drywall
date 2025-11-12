@@ -140,7 +140,7 @@ export const bonusModules: Module[] = [
     title: 'Lista de Ferramentas',
     description: 'PDF completo com as ferramentas essenciais pra começar no drywall.',
     imageId: 'drywall-tools',
-    buttonText: 'Visualizar Guia',
+    buttonText: 'Visualizar Lista',
     buttonLink: '#pdf-modal',
     meta: getMeta(1, '10 min', 'resource'),
   },
