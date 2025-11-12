@@ -159,7 +159,7 @@ export const bonusModules: Module[] = [
     description: 'Um modelo pronto para você adaptar e enviar orçamentos profissionais para seus clientes.',
     imageId: 'drywall-budget',
     buttonText: 'Visualizar Modelo',
-    buttonLink: '#',
+    buttonLink: 'https://docs.google.com/spreadsheets/d/1LPg9AxxxKx0x4ZNc6bmnsnUBmqOD5XQc/edit?usp=sharing&ouid=113534566966728872736&rtpof=true&sd=true',
     meta: getMeta(1, '5 min', 'resource'),
   },
   {
