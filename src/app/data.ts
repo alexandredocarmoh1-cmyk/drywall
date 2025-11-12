@@ -147,7 +147,7 @@ export const bonusModules: Module[] = [
   {
     id: 'suppliers',
     title: 'Lista de Materiais e Fornecedor',
-    description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
+    description: 'Acesse as fichas técnicas detalhadas dos principais materiais e componentes da Knauf para seus projetos em drywall.',
     imageId: 'drywall-suppliers',
     buttonText: 'Visualizar Lista',
     buttonLink: '/modulos/suppliers',
@@ -357,3 +357,4 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
   
 
     
+
