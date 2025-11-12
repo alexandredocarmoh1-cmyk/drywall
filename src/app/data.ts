@@ -189,6 +189,13 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
         embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
       },
     ],
-    tools: [],
+    tools: [
+        {
+            id: 'tools-1',
+            title: 'Lista de Ferramentas para Iniciantes em Drywall',
+            url: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/view?usp=sharing',
+            embedUrl: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/preview'
+        }
+    ],
     suppliers: []
   };
