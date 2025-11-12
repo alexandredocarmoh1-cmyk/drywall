@@ -26,6 +26,7 @@ type Module = {
 type ModuleCardProps = {
   module: Module;
   reason?: string;
+  onButtonClick?: () => void;
 };
 
 const Icon = ({ name, className }: { name: string; className: string }) => {
@@ -34,13 +35,15 @@ const Icon = ({ name, className }: { name: string; className: string }) => {
   return <LucideIcon className={className} />;
 };
 
-export default function ModuleCard({ module, reason }: ModuleCardProps) {
+export default function ModuleCard({ module, reason, onButtonClick }: ModuleCardProps) {
   const image = module.imageId
     ? PlaceHolderImages.find((img) => img.id === module.imageId)
     : PlaceHolderImages[1];
   
-  return (
-    <Link href={module.buttonLink || '#'} passHref>
+  const isExternalLink = module.buttonLink?.startsWith('http');
+  const isPdfModal = module.buttonLink === '#';
+
+  const cardContent = (
       <Card className="flex flex-col bg-card overflow-hidden shadow-lg transition-all duration-200 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10 h-full cursor-pointer">
         {image && (
           <div className="relative">
@@ -80,11 +83,36 @@ export default function ModuleCard({ module, reason }: ModuleCardProps) {
           )}
         </CardContent>
         <CardFooter>
-          <Button asChild className="w-full font-bold">
-            <div>{module.buttonText}</div>
+          <Button 
+            asChild={!isPdfModal}
+            onClick={isPdfModal ? onButtonClick : undefined}
+            className="w-full font-bold"
+          >
+            {isPdfModal ? (
+              <div>{module.buttonText}</div>
+            ) : (
+              <div >{module.buttonText}</div>
+            )}
           </Button>
         </CardFooter>
       </Card>
+  );
+
+  if (isPdfModal || !module.buttonLink) {
+    return cardContent;
+  }
+  
+  if (isExternalLink) {
+    return (
+      <a href={module.buttonLink} target="_blank" rel="noopener noreferrer">
+        {cardContent}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={module.buttonLink} passHref>
+      {cardContent}
     </Link>
   );
 }

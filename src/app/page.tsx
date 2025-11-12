@@ -16,8 +16,6 @@ export default function Home() {
   const [selectedPdf, setSelectedPdf] = useState<(typeof pdfResourceGroups)[string][0] | null>(null);
 
   const handlePdfModuleClick = (moduleId: string) => {
-    // This logic is now only for single-pdf modals, which we are moving away from.
-    // Kept here in case you want to use it for something else later.
     const pdfs = pdfResourceGroups[moduleId];
     if (pdfs && pdfs.length === 1) {
       setSelectedPdf(pdfs[0]);
@@ -44,7 +42,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonusModules.map((module) => (
-             <ModuleCard key={module.id} module={module} />
+             <ModuleCard key={module.id} module={module} onButtonClick={() => handlePdfModuleClick(module.id)} />
           ))}
         </div>
 

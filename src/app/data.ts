@@ -141,7 +141,7 @@ export const bonusModules: Module[] = [
     description: 'PDF completo com as ferramentas essenciais pra começar no drywall.',
     imageId: 'drywall-tools',
     buttonText: 'Visualizar Lista',
-    buttonLink: '/modulos/tools',
+    buttonLink: '#',
     meta: getMeta(1, '10 min', 'resource'),
   },
   {
@@ -150,7 +150,7 @@ export const bonusModules: Module[] = [
     description: 'Principais lojas e marcas com descontos e materiais de qualidade.',
     imageId: 'drywall-suppliers',
     buttonText: 'Visualizar Lista',
-    buttonLink: '/modulos/suppliers',
+    buttonLink: '#',
     meta: getMeta(1, '8 min', 'resource'),
   },
   {
@@ -197,5 +197,12 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
             embedUrl: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/preview'
         }
     ],
-    suppliers: []
+    suppliers: [
+        {
+            id: 'suppliers-1',
+            title: 'Lista de Fornecedores e Materiais',
+            url: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/view?usp=sharing',
+            embedUrl: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/preview'
+        }
+    ]
   };
