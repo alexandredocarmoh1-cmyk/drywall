@@ -179,7 +179,7 @@ export const allModules = [...mainModules, ...bonusModules];
 
 export const pdfResourceGroups: Record<string, PdfResource[]> = {
     walls: [
-        {
+      {
         id: 'walls-1',
         title: 'Guia Completo Sobre Drywall',
         url: 'https://drive.google.com/file/d/1BNBvJkv1HxXjvI5QFtY7tQCj4y9X1Akh/view?usp=sharing',
@@ -196,6 +196,12 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
         title: 'Como Instalar Drywall no Forro',
         url: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/view?usp=sharing',
         embedUrl: 'https://drive.google.com/file/d/1gTZvP-gqzoXf_hxUUlvQRGqmQUABhpjE/preview'
+      },
+      {
+        id: 'walls-4',
+        title: 'Curso de Drywall: Manual Completo',
+        url: 'https://drive.google.com/file/d/1PuBViH7vKjWvSmF4SJIlAztTfdRhjyl7/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1PuBViH7vKjWvSmF4SJIlAztTfdRhjyl7/preview'
       },
     ],
     tools: [
@@ -357,4 +363,5 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
   
 
     
+
 
