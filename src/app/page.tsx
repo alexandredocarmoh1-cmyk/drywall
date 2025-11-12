@@ -14,7 +14,7 @@ import EmbedModal, { type EmbedModalProps } from '@/components/embed-modal';
 
 type SelectedContent = {
   type: 'pdf' | 'sheet';
-  resource: (typeof pdfResourceGroups)[string][0];
+  resource: (typeof pdfResourceGroups)[string][0] | typeof budgetSheetResource;
 }
 
 export default function Home() {
@@ -37,6 +37,10 @@ export default function Home() {
     embedUrl: selectedContent.resource.embedUrl,
     contentType: selectedContent.type,
   } : null;
+
+  const whatsappMessage = encodeURIComponent('Olá! Vim do curso Especialista em Drywall e preciso de ajuda.');
+  const whatsappLink = `https://wa.me/5599999999999?text=${whatsappMessage}`;
+
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -72,7 +76,7 @@ export default function Home() {
                 Se tiver qualquer dúvida sobre o curso, fale com nosso suporte exclusivo no WhatsApp.
               </p>
               <Button asChild size="lg" className="bg-[#25d366] text-white hover:bg-[#25d366]/90 font-bold text-base transition-transform hover:scale-105">
-                <a href="https://wa.me/5599999999999" target="_blank">
+                <a href={whatsappLink} target="_blank">
                   <MessageSquareText className="mr-2 h-5 w-5" />
                   Falar com Suporte
                 </a>
