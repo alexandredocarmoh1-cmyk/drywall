@@ -218,6 +218,138 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
           title: 'Ficha Técnica - Knauf Acessórios_0',
           url: 'https://drive.google.com/file/d/171iRgvSmTtignOOpvDOQxraRAmPooFk0/view?usp=sharing',
           embedUrl: 'https://drive.google.com/file/d/171iRgvSmTtignOOpvDOQxraRAmPooFk0/preview'
+      },
+      {
+        id: 'suppliers-3',
+        title: 'Ficha Técnica - Knauf Cimenticia 8mm',
+        url: 'https://drive.google.com/file/d/1ENZRRAvxsBT-Nat7vapv8EfoCbs3zqOW/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1ENZRRAvxsBT-Nat7vapv8EfoCbs3zqOW/preview'
+      },
+      {
+        id: 'suppliers-4',
+        title: 'Ficha Técnica - Knauf Cleaneo Retangular Aleatório',
+        url: 'https://drive.google.com/file/d/1T18gVCAtMJZvOpqkDcQ43kaSHTlE2jGo/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1T18gVCAtMJZvOpqkDcQ43kaSHTlE2jGo/preview'
+      },
+      {
+        id: 'suppliers-5',
+        title: 'Ficha Técnica - Knauf Cleaneo_0',
+        url: 'https://drive.google.com/file/d/1AQ0v8K60N4dCFm6RfwXIAGotYkPOwHgT/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1AQ0v8K60N4dCFm6RfwXIAGotYkPOwHgT/preview'
+      },
+      {
+        id: 'suppliers-6',
+        title: 'Ficha Técnica - Knauf Danoline_1',
+        url: 'https://drive.google.com/file/d/13lgLVLAn3N4rgxXoF-rlxIkwx26dMBgt/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/13lgLVLAn3N4rgxXoF-rlxIkwx26dMBgt/preview'
+      },
+      {
+        id: 'suppliers-7',
+        title: 'Ficha Técnica - Knauf Fita de Cantos',
+        url: 'https://drive.google.com/file/d/1rUjDms0b5QIB05ySxMXDirtVYCxNXTsR/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1rUjDms0b5QIB05ySxMXDirtVYCxNXTsR/preview'
+      },
+      {
+        id: 'suppliers-8',
+        title: 'Ficha Técnica - Knauf Fita de Isolamento',
+        url: 'https://drive.google.com/file/d/1mrC9sa50KK0K50kM2DB_d3JGq1Ty7UTL/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1mrC9sa50KK0K50kM2DB_d3JGq1Ty7UTL/preview'
+      },
+      {
+        id: 'suppliers-9',
+        title: 'Ficha Técnica - Knauf Fita de Junta',
+        url: 'https://drive.google.com/file/d/1w3HF29bS1NXVAHPmo4A4MdZN5ZFBK0Ht/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1w3HF29bS1NXVAHPmo4A4MdZN5ZFBK0Ht/preview'
+      },
+      {
+        id: 'suppliers-10',
+        title: 'Ficha Técnica - Knauf Flexboard',
+        url: 'https://drive.google.com/file/d/1x4DD69RlcRnmkQ3ejzWhDrTplsn3KZ2H/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1x4DD69RlcRnmkQ3ejzWhDrTplsn3KZ2H/preview'
+      },
+      {
+        id: 'suppliers-11',
+        title: 'Ficha Técnica - Knauf Hardboard',
+        url: 'https://drive.google.com/file/d/1b39uxvDpjUUIruQGPADs9IZv3ftLtHt_/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1b39uxvDpjUUIruQGPADs9IZv3ftLtHt_/preview'
+      },
+      {
+        id: 'suppliers-12',
+        title: 'Ficha Técnica - Knauf Kleanboard - Final',
+        url: 'https://drive.google.com/file/d/1p4ie_O0vZayIy_pBbUwzDTZcxh3ayKii/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1p4ie_O0vZayIy_pBbUwzDTZcxh3ayKii/preview'
+      },
+      {
+        id: 'suppliers-13',
+        title: 'Ficha Técnica - Knauf Massa Safeboard',
+        url: 'https://drive.google.com/file/d/1rwziWMgG3PIh5yL92L6my2km4ynS2f7y/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1rwziWMgG3PIh5yL92L6my2km4ynS2f7y/preview'
+      },
+      {
+        id: 'suppliers-14',
+        title: 'Ficha Técnica - Knauf Parafusos',
+        url: 'https://drive.google.com/file/d/1us-RUkQkadlKY0SZi5gkDOBnlNsepjNX/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1us-RUkQkadlKY0SZi5gkDOBnlNsepjNX/preview'
+      },
+      {
+        id: 'suppliers-15',
+        title: 'Ficha Técnica - Knauf Perfis',
+        url: 'https://drive.google.com/file/d/1uLz_p3qaiO3qM48Hu7oks_IpDQb-hlvn/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1uLz_p3qaiO3qM48Hu7oks_IpDQb-hlvn/preview'
+      },
+      {
+        id: 'suppliers-16',
+        title: 'Ficha Técnica - Knauf Readyfix_0',
+        url: 'https://drive.google.com/file/d/10HL_WOGU8wOt4SbM6aZrUnMLwUAdibOw/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/10HL_WOGU8wOt4SbM6aZrUnMLwUAdibOw/preview'
+      },
+      {
+        id: 'suppliers-17',
+        title: 'Ficha Técnica - Knauf RF',
+        url: 'https://drive.google.com/file/d/1_7HtTqOWDTS6C52zM_8RI_2p9ZxJV0NF/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1_7HtTqOWDTS6C52zM_8RI_2p9ZxJV0NF/preview'
+      },
+      {
+        id: 'suppliers-18',
+        title: 'Ficha Técnica - Knauf RU',
+        url: 'https://drive.google.com/file/d/1qrVOTbg3td-lBwc7wLaIleE_s0suQV3i/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1qrVOTbg3td-lBwc7wLaIleE_s0suQV3i/preview'
+      },
+      {
+        id: 'suppliers-19',
+        title: 'Ficha Técnica - Knauf Safeboard_1',
+        url: 'https://drive.google.com/file/d/1uroXyFTCMRHixJcmsA9QEpAKSPOQcJIv/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1uroXyFTCMRHixJcmsA9QEpAKSPOQcJIv/preview'
+      },
+      {
+        id: 'suppliers-20',
+        title: 'Ficha Técnica - Knauf ST',
+        url: 'https://drive.google.com/file/d/1AIa0hpXzBFTYJlYXxzwMxH3PjPmAlPD3/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1AIa0hpXzBFTYJlYXxzwMxH3PjPmAlPD3/preview'
+      },
+      {
+        id: 'suppliers-21',
+        title: 'Ficha Técnica - Tampa ABS',
+        url: 'https://drive.google.com/file/d/1uJSESPXosVWSnUlzwUz-PjoCqrOu3Ejw/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1uJSESPXosVWSnUlzwUz-PjoCqrOu3Ejw/preview'
+      },
+      {
+        id: 'suppliers-22',
+        title: 'Ficha Técnica - Tampa Premium_1',
+        url: 'https://drive.google.com/file/d/1-LCyTPA5klQY5g6dhoo5IJIUyXqVHuCV/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1-LCyTPA5klQY5g6dhoo5IJIUyXqVHuCV/preview'
+      },
+      {
+        id: 'suppliers-23',
+        title: 'Ficha-Técnica-Knauf-AMF-Forros-e-Tetos-Removiveis',
+        url: 'https://drive.google.com/file/d/1gVyfoBXDq3oqOSA3yFpI96YnD94hOmkf/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1gVyfoBXDq3oqOSA3yFpI96YnD94hOmkf/preview'
+      },
+      {
+        id: 'suppliers-24',
+        title: 'Phonik Knauf 2018',
+        url: 'https://drive.google.com/file/d/1NFzCoRRgv7sTZyVUoTCRnMLY77iIDxGl/view?usp=sharing',
+        embedUrl: 'https://drive.google.com/file/d/1NFzCoRRgv7sTZyVUoTCRnMLY77iIDxGl/preview'
       }
     ]
   };
@@ -229,3 +361,5 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
     embedUrl: 'https://docs.google.com/spreadsheets/d/1LPg9AxxxKx0x4ZNc6bmnsnUBmqOD5XQc/edit?usp=sharing&ouid=113534566966728872736&rtpof=true&sd=true'
   }
   
+
+    
