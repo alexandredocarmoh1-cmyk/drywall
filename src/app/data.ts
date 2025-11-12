@@ -212,7 +212,13 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
             title: 'Lista de Fornecedores e Materiais',
             url: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/view?usp=sharing',
             embedUrl: 'https://drive.google.com/file/d/1TDxhL1HDCKaTtCypUh_R1QEGPYgxddTW/preview'
-        }
+        },
+        {
+          id: 'suppliers-2',
+          title: 'Ficha Técnica - Knauf Acessórios_0',
+          url: 'https://drive.google.com/file/d/171iRgvSmTtignOOpvDOQxraRAmPooFk0/view?usp=sharing',
+          embedUrl: 'https://drive.google.com/file/d/171iRgvSmTtignOOpvDOQxraRAmPooFk0/preview'
+      }
     ]
   };
 
