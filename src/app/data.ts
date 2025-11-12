@@ -49,15 +49,6 @@ function getMeta(lessons: number, duration: string, type: 'video' | 'resource' |
 
 export const mainModules: Module[] = [
   {
-    id: 'walls',
-    title: 'Materiais de Apoio - PDF',
-    description: 'Baixe apostilas e listas com tudo que você precisa pra começar.',
-    imageId: 'drywall-guides',
-    buttonText: 'Acessar Materiais',
-    buttonLink: '/modulos/walls',
-    meta: getMeta(3, '3 guias', 'resource'),
-  },
-  {
     id: 'ceilings',
     title: 'Instalação Completa do Drywall na Prática',
     description: 'Aprenda a instalar drywall do início ao fim, direto na prática.',
@@ -135,6 +126,15 @@ export const mainModules: Module[] = [
 ];
 
 export const bonusModules: Module[] = [
+  {
+    id: 'walls',
+    title: 'Materiais de Apoio - PDF',
+    description: 'Baixe apostilas e listas com tudo que você precisa pra começar.',
+    imageId: 'drywall-guides',
+    buttonText: 'Acessar Materiais',
+    buttonLink: '/modulos/walls',
+    meta: getMeta(3, '3 guias', 'resource'),
+  },
   {
     id: 'tools',
     title: 'Lista de Ferramentas',
@@ -319,7 +319,7 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
         id: 'suppliers-19',
         title: 'Ficha Técnica - Knauf Safeboard_1',
         url: 'https://drive.google.com/file/d/1uroXyFTCMRHixJcmsA9QEpAKSPOQcJIv/view?usp=sharing',
-        embedUrl: 'https://drive.google.com/file/d/1uroXyFTCMRHixJcmsA9QEpAKSPOQcJIv/preview'
+        embedUrl: 'https://drive.gdrive.google.com/file/d/1uroXyFTCMRHixJcmsA9QEpAKSPOQcJIv/preview'
       },
       {
         id: 'suppliers-20',
@@ -363,5 +363,6 @@ export const pdfResourceGroups: Record<string, PdfResource[]> = {
   
 
     
+
 
 
