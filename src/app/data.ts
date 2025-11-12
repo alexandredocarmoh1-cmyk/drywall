@@ -157,7 +157,7 @@ export const bonusModules: Module[] = [
     id: 'budget-model',
     title: 'Modelo de Orçamento pra Drywall',
     description: 'Um modelo pronto para você adaptar e enviar orçamentos profissionais para seus clientes.',
-    imageId: 'drywall-budget',
+    imageId: 'drywall-budget-model',
     buttonText: 'Visualizar Modelo',
     buttonLink: '#',
     meta: getMeta(1, '5 min', 'resource'),

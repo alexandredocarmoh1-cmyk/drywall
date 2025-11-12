@@ -71,6 +71,12 @@
       "description": "Acoustic foam panels for sound insulation.",
       "imageUrl": "https://i.imgur.com/kFvVjPH.jpeg",
       "imageHint": "drywall furniture"
+    },
+    {
+      "id": "drywall-budget-model",
+      "description": "A spreadsheet for budgeting a drywall project.",
+      "imageUrl": "https://i.imgur.com/gYHvWaQ.jpeg",
+      "imageHint": "budget spreadsheet"
     }
   ]
 }
